@@ -1,2 +1,2 @@
-# tftec-desafio2.0
-Repositório Terraform do Desafio 2.0 - TFTEC
+# TFTEC - Desafio Azure 2.0
+Repositório Terraform do Desafio Azure 2.0 - TFTEC
