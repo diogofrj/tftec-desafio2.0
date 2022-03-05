@@ -1,0 +1,17 @@
+az vm create -n "VM-DC" -g "RG-Desafio" --location "centralus" --attach-os-disk VM-DC-OSDisk --nics VM-DC-nic --size Standard_E2as_v5 --os-type windows --boot-diagnostics-storage dfs76ddesafio02 --license-type Windows_Server --tags "tftec=Desafio"
+az vm create -n "VM-HELP" -g "RG-Desafio" --location "centralus" --attach-os-disk VM-HELP-OSDisk --nics VM-HELP-nic --size Standard_E2as_v5 --os-type Linux --boot-diagnostics-storage dfs76ddesafio02 --tags "tftec=Desafio"
+
+az vm create -n "VM-SQL" -g "RG-Desafio" --location "eastus" --attach-os-disk VM-SQL-OSDisk --nics VM-SQL-nic --size Standard_E2as_v5 --os-type Windows --boot-diagnostics-storage dfs76ddesafio01  --license-type Windows_Server --tags "tftec=Desafio"
+az vm create -n "VM-PORTAL" -g "RG-Desafio" --location "eastus" --attach-os-disk VM-PORTAL-OSDisk --nics VM-PORTAL-nic --size Standard_E2as_v5 --os-type Windows --boot-diagnostics-storage dfs76ddesafio01  --license-type Windows_Server --tags "tftec=Desafio"
+
+
+
+
+
+
+
+
+
+
+
+
