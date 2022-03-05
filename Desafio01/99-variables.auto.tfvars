@@ -25,5 +25,5 @@ tags = {
   "tftec" = "Desafio"
 }
 
-tokendevops = "m2do376lkwvzvl26p2gis35linhmf2ntqtenlhd4me5ejtx4khla"
+tokendevops = "regenerated"
 url_org     = "https://dev.azure.com/diogofernandesnet"
