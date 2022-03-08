@@ -1,2 +1,1 @@
-data "azuread_domains" "primary_domain" {
-}
+data "azuread_domains" "primary_domain" {}
