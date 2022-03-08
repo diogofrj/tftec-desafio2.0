@@ -12,6 +12,6 @@ provider "azurerm" {
 
 
 provider "azuredevops" {
-  org_service_url       = var.url_org
+  org_service_url       = var.url_organization
   personal_access_token = var.DevOpsPAT
 }

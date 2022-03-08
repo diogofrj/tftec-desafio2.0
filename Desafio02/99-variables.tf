@@ -1,5 +1,5 @@
 variable "DevOpsPAT" {}
-variable "url_org" {}
+variable "url_organization" {}
 variable "rgname" {}
 # variable "signame" {}
 # variable "regionus1" {}
