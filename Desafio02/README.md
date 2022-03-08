@@ -22,6 +22,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [azuread_user.svc_azure](https://registry.terraform.io/providers/hashicorp/azuread/2.18.0/docs/resources/user) | resource |
 | [azuredevops_project.project_tftec_desafio](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.0/docs/resources/project) | resource |
 | [azuread_domains.primary_domain](https://registry.terraform.io/providers/hashicorp/azuread/2.18.0/docs/data-sources/domains) | data source |
 
@@ -41,6 +42,9 @@ No modules.
 |------|-------------|
 | <a name="output_primary_domain"></a> [primary\_domain](#output\_primary\_domain) | n/a |
 | <a name="output_secundary_domain"></a> [secundary\_domain](#output\_secundary\_domain) | n/a |
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 
@@ -70,4 +74,29 @@ https://www.microsoft.com/en-us/download/details.aspx?id=47594
 Comando para forçar a sincronização no Azure AD Connect:
 ```powershell
 Start-ADSyncSyncCycle -PolicyType Delta
+```
+
+
+
+## Script para alterar sufixo dos usuários do AD:
+
+```powershell
+import-module activedirectory
+
+#Old domain suffix
+$oldSuffix = "tfteccompany.com.br"
+
+#New domain suffix
+$newSuffix = "diogofernandes.net"
+
+#Specify the OU this script will target
+$ou = “OU=Departamentos,DC=diogofernandes,DC=net”
+
+#Specify a writeable domain controller
+$server = “VM-DC-PRD”
+
+Get-ADUser -SearchBase $ou -filter * | ForEach-Object {
+$newUpn = $_.UserPrincipalName.Replace($oldSuffix,$newSuffix)
+$_ | Set-ADUser -server $server -UserPrincipalName $newUpn
+}
 ```
