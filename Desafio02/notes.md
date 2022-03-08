@@ -1,4 +1,3 @@
-
 --> Links
 
 CAF: https://docs.microsoft.com/pt-br/azure/cloud-adoption-framework/
