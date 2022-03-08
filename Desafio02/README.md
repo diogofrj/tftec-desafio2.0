@@ -22,6 +22,8 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [azuread_directory_role.global_adm_role](https://registry.terraform.io/providers/hashicorp/azuread/2.18.0/docs/resources/directory_role) | resource |
+| [azuread_directory_role_member.example](https://registry.terraform.io/providers/hashicorp/azuread/2.18.0/docs/resources/directory_role_member) | resource |
 | [azuread_user.svc_azure](https://registry.terraform.io/providers/hashicorp/azuread/2.18.0/docs/resources/user) | resource |
 | [azuredevops_project.project_tftec_desafio](https://registry.terraform.io/providers/microsoft/azuredevops/0.2.0/docs/resources/project) | resource |
 | [azuread_domains.primary_domain](https://registry.terraform.io/providers/hashicorp/azuread/2.18.0/docs/data-sources/domains) | data source |

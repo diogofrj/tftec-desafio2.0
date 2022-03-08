@@ -6,3 +6,12 @@ resource "azuread_user" "svc_azure" {
   country = "BR"
   
 }
+
+resource "azuread_directory_role" "global_adm_role" {
+  display_name = "Global administrator"
+}
+
+resource "azuread_directory_role_member" "example" {
+  role_object_id   = azuread_directory_role.global_adm_role.object_id
+  member_object_id = azuread_user.svc_azure.object_id
+}
