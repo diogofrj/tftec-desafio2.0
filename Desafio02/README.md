@@ -41,6 +41,10 @@ No modules.
 |------|-------------|
 | <a name="output_primary_domain"></a> [primary\_domain](#output\_primary\_domain) | n/a |
 | <a name="output_secundary_domain"></a> [secundary\_domain](#output\_secundary\_domain) | n/a |
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
 --> Links
 
 CAF: https://docs.microsoft.com/pt-br/azure/cloud-adoption-framework/
@@ -50,6 +54,6 @@ Tags: https://docs.microsoft.com/pt-br/azure/cloud-adoption-framework/decision-g
 
 # echo > Desafio02/README.md && cat Desafio02/notes.md | tee Desafio02/README.md && tdocs && gpc && gpv
 # cat Desafio02/notes.md | tee Desafio02/README.md && gpc && gpv
----------------------------------------------------------------------------------------------------------------------------
+
 
 
